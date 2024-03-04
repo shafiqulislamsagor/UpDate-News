@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images/news.png" type="image/x-icon">
+    <title>UpDate-News</title>
+    <!-- Tailwind and Daisy UI link -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Mulish and Inter Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap"
+        rel="stylesheet">
+    <style>
+        .inter {
+            font-family: "Inter", sans-serif;
+        }
+
+        .mulish {
+            font-family: "Mulish", sans-serif;
+        }
+
+        .img {
+            background-image: url(images/bgbanner.png);
+            background-position: bottom;
+            background-size: contain;
+            background-repeat: no-repeat;
+            height: 100%;
+        }
+
+        .gradient {
+            background: linear-gradient(to right, #797DFC, #797DFC6B);
+            -webkit-background-clip: text;
+            color: transparent;
+        }
+
+        .defult {
+            background-color: transparent;
+            border: none;
+            box-shadow: none;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="w-11/12 lg:w-4/5 mx-auto pt-3 lg:pt-8">
+        <!-- Navbar -->
+        <div class="navbar bg-base-100 mb-5 lg:mb-14">
+            <div class="navbar-start justify-center lg:justify-start gap-12 lg:gap-0">
+                <div class="dropdown">
+                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                        <i class="fa-solid fa-bars text-xl"></i>
+                    </div>
+                    <ul tabindex="0"
+                        class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-32">
+                        <li><a class="flex gap-3"><i class="fa-solid fa-house"></i>Home</a></li>
+                        <li><a class="flex gap-3"><i class="fa-solid fa-pen"></i>Edit</a></li>
+                        <li><a class="flex gap-3"><i class="fa-solid fa-user-plus"></i>Add</a></li>
+                        <li><a class="flex gap-3"><i class="fa-solid fa-flag"></i>Flag</a></li>
+                    </ul>
+                </div>
+                <a class="btn text-[#12132D] mulish text-xl lg:text-4xl font-black">UpDate</a>
+            </div>
+
+            <div class="navbar-end gap-5">
+                <div class="navbar-center hidden lg:flex">
+                    <ul class="flex gap-3 px-1">
+                        <abbr title="Home">
+                            <li
+                                class="border border-[#12132D1A] bg-[#12132D08] rounded-full hover:bg-gray-200 transition-all duration-500  cursor-pointer">
+                                <a href="#"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                        stroke-width="1.5" stroke="currentColor" class="w-6 h-6 m-3 text-[#12132D99]">
+                                        <path stroke-linecap="round" stroke-linejoin="round"
+                                            d="m2.25 12 8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25" />
+                                    </svg>
+                                </a>
+                            </li>
+                        </abbr>
+                        <abbr title="Edit">
+                            <li
+                                class="border border-[#12132D1A] bg-[#12132D08] rounded-full hover:bg-gray-200 transition-all duration-500  cursor-pointer">
+                                <a href="#"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                        stroke-width="1.5" stroke="currentColor" class="w-6 h-6 m-3 text-[#12132D99]">
+                                        <path stroke-linecap="round" stroke-linejoin="round"
+                                            d="m16.862 4.487 1.687-1.688a1.875 1.875 0 1 1 2.652 2.652L6.832 19.82a4.5 4.5 0 0 1-1.897 1.13l-2.685.8.8-2.685a4.5 4.5 0 0 1 1.13-1.897L16.863 4.487Zm0 0L19.5 7.125" />
+                                    </svg>
+                                </a>
+                            </li>
+                        </abbr>
+                        <abbr title="Add">
+                            <li
+                                class="border border-[#12132D1A] bg-[#12132D08] rounded-full hover:bg-gray-200 transition-all duration-500  cursor-pointer">
+                                <a href="#"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                        stroke-width="1.5" stroke="currentColor" class="w-6 h-6 m-3 text-[#12132D99]">
+                                        <path stroke-linecap="round" stroke-linejoin="round"
+                                            d="M18 7.5v3m0 0v3m0-3h3m-3 0h-3m-2.25-4.125a3.375 3.375 0 1 1-6.75 0 3.375 3.375 0 0 1 6.75 0ZM3 19.235v-.11a6.375 6.375 0 0 1 12.75 0v.109A12.318 12.318 0 0 1 9.374 21c-2.331 0-4.512-.645-6.374-1.766Z" />
+                                    </svg>
+                                </a>
+                            </li>
+                        </abbr>
+                        <abbr title="National">
+                            <li
+                                class="border border-[#12132D1A] bg-[#12132D08] rounded-full hover:bg-gray-200 transition-all duration-500  cursor-pointer">
+                                <a href="#"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                        stroke-width="1.5" stroke="currentColor" class="w-6 h-6 m-3 text-[#12132D99]">
+                                        <path stroke-linecap="round" stroke-linejoin="round"
+                                            d="M3 3v1.5M3 21v-6m0 0 2.77-.693a9 9 0 0 1 6.208.682l.108.054a9 9 0 0 0 6.086.71l3.114-.732a48.524 48.524 0 0 1-.005-10.499l-3.11.732a9 9 0 0 1-6.085-.711l-.108-.054a9 9 0 0 0-6.208-.682L3 4.5M3 15V4.5" />
+                                    </svg>
+                                </a>
+                            </li>
+                        </abbr>
+                    </ul>
+                </div>
+                <a href="#"
+                    class="btn mulish text-lg text-white font-bold rounded-[50px] lg:px-10 hover:bg-[#383de2] bg-[#797DFC]">Sign
+                    In</a>
+            </div>
+        </div>
+        <!-- Banner -->
+        <div class=" bg-[#12132D] rounded-[32px]">
+            <div class="img px-4 py-20 lg:p-24 flex flex-col lg:flex-row lg:items-center lg:justify-between">
+                <div class="lg:w-[55%] text-white">
+                    <h2 class="mulish font-black text-4xl text-center lg:text-left lg:text-6xl mb-5 lg:leading-[86px]">
+                        Welcome to the<br> <span class="gradient">UpDate</span> News</h2>
+                    <p
+                        class="mulish mb-8 text-[#FFFFFFCC] text-base text-center lg:text-left lg:text-lg font-medium lg:leading-9">
+                        The European Commission will
+                        release €50m out of €82m in funds for the UN aid agency (UNRWA) operating in Gaza.</p>
+                    <div class="bg-white mb-4 lg:mb-0 lg:w-3/4 flex pr-1 py-2 pl-5 rounded-[50px]">
+                        <input class="flex-1 w-1/2 bg-white outline-none mulish font-medium text-black" type="text"
+                            name="" placeholder="Search here anything" id="input">
+                        <button id="btnSearch"
+                            class="btn lg:px-7 mulish text-xl font-bold rounded-[46px] bg-[#797DFC] hover:bg-[#6065f7] text-white">Search</button>
+                    </div>
+                </div>
+                <div class="lg:w-[40%] bg-white p-12 rounded-[32px]">
+                    <ul class="mulish font-medium text-lg lg:text-2xl space-y-4 text-[#12132DCC]">
+                        <li class="w-full flex justify-between">Registered Users <span>02</span></li>
+                        <li class="w-full flex justify-between">Forum <span>01</span></li>
+                        <li class="w-full flex justify-between">Topics <span>05</span></li>
+                        <li class="w-full flex justify-between">Replies <span>03</span></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main class="w-11/12 lg:w-4/5 mx-auto pt-3 lg:pt-20">
+        <section>
+            <div class="lg:w-3/5 mx-auto pt-9 lg:pt-0 text-center">
+                <h2 class="mulish text-4xl font-black pb-6 text-[#12132D]">Let’s Discuss</h2>
+                <p class="inter text-lg leading-[30px] text-[#12132D99]">For a specific research, insert the keywords
+                    (e.g. International Criminal Court; landmines treaty; school competitions) in the search box here
+                    below.</p>
+            </div>
+            <div class="flex gap-5 lg:gap-0 flex-col lg:flex-row justify-between mt-12">
+                <!-- category -->
+                <div id="category" class="lg:w-3/5 space-y-6">
+                    <div class="loader text-center hidden">
+                        <span class="loading loading-bars loading-lg"></span>
+                    </div>
+                </div>
+                <div class="lg:w-[37%]">
+                    <div class="rounded-3xl p-6 bg-[#12132D0D]">
+                        <div class="flex justify-between mb-6">
+                            <h6 class="mulish text-xl font-bold text-[#12132D]">Title</h6>
+                            <div class="flex justify-end gap-3 w-2/3 lg:w-2/4">
+                                <img src="images/Frame (1).png" alt="">
+                                <p class="inter text-[#12132D99]">Mark as read (<span id="valueAdd">0</span>)</p>
+                            </div>
+                        </div>
+                        <!-- mark as read part -->
+                        <div id="readContainer" class="space-y-5">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section
+            class="flex flex-col lg:flex-row items-center my-10 p-5 pb-0 text-center lg:text-left lg:pl-20 lg:pt-14 lg:pr-5 bg-[#12132D] rounded-[32px]">
+            <div class="lg:w-3/4">
+                <h2 class="mulish text-4xl font-black text-white mb-4">Join Our UpDate Teams</h2>
+                <p class="mulish lg:text-lg text-white mb-8">The World Council engages in advocacy, development and
+                    education to champion and grow credit unions and cooperative finance worldwide.</p>
+                <button
+                    class="btn mb-12 lg:mb-24 lg:px-7 mulish text-xl font-bold rounded-[46px] bg-[#797DFC] outline-none border-none hover:bg-[#6065f7] text-white">Registered
+                    Now</button>
+            </div>
+            <div>
+                <img src="images/joinforum.png" alt="">
+            </div>
+        </section>
+        <section>
+            <div class="lg:w-3/5 mx-auto pt-9 lg:pt-0 text-center">
+                <h2 class="mulish text-4xl font-black pb-6 text-[#12132D]">Latest Posts</h2>
+                <p class="inter text-lg leading-[30px] text-[#12132D99]">The president of the Crisis Group tells Roxanne
+                    Escobales why war is trumping diplomacy and why South Africa’s legal case against Israel matters.
+                </p>
+            </div>
+            <div class="loader text-center hidden my-7">
+                <span class="loading loading-bars loading-lg"></span>
+            </div>
+            <div id="letestContainer" class="grid grid-cols-1 lg:grid-cols-3 gap-6 mt-12 mb-10 lg:mb-24">
+                
+            </div>
+        </section>
+    </main>
+    <footer class=" bg-[#30325E1A]">
+        <div class="w-11/12 lg:w-4/5 mx-auto py-20 text-center">
+            <h2 class="mulish mb-4 text-4xl font-black text-[#12132D]">UpDate News</h2>
+            <p class="mulish mb-8 text-[#12132DB3] lg:w-2/3 mx-auto">Comfort Ero is the President has become an anticipated calendar moment, setting the security and peace agenda for the year.</p>
+            <div class="flex gap-8 justify-center text-2xl">
+                <div><i class="fa-brands fa-twitter"></i></div>
+                <div><i class="fa-brands fa-facebook"></i></div>
+                <div><i class="fa-brands fa-instagram"></i></div>
+                <div><i class="fa-brands fa-github"></i></div>
+            </div>
+            <hr class="border-[#30325E1A] border my-10">
+            <p class="mulish font-light text-[#12132D80]">2024, All Rights Reserved.</p>
+        </div>
+    </footer>
+    <!-- Font Awesome link -->
+    <script src="https://kit.fontawesome.com/763e0e1bf4.js" crossorigin="anonymous"></script>
+    <!-- JS file link -->
+    <script src="js/index.js"></script>
+</body>
+
+</html>
